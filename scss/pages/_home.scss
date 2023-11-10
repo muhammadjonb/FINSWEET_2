@@ -1,0 +1,132 @@
+.section_hero{
+    background-color: $hero-color;
+    padding: 96px 0 32px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.idea{
+    @include flex-items;
+    gap: 40px;
+    &_text{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        max-width: 625px;
+        h1{
+            font-size: 56px;
+            line-height: 68px;
+            color: $white;
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            color: $white;
+            opacity: .6;
+            font-weight: 200;
+            max-width: 520px;
+            margin: 24px 0 36px 0;
+        }
+    }
+    &_img{
+        max-width: 560px;
+        display: flex;
+        align-items: flex-start;
+        &_img{
+            width: 98%;
+        }
+    }
+}
+.idea_logo{
+    @include flex-items;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px 32px;
+    &_card{
+        width: 187px;
+        height: 106px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        span{
+            font-size: 14px;
+            line-height: 20px;
+            color: $white;
+            opacity: 0.6;
+        }
+        h4{
+            font-size: 18px;
+            line-height: 28px;
+            color: $white;
+            font-weight: 500;
+        }
+    }
+}
+
+
+
+
+
+@include for-large-desktop() {
+    .idea{
+        &_text{
+            max-width: 550px;
+            h1{
+                font-size: 48px;
+            }
+        }
+    }
+}
+
+@include for-large-tablet(){
+    .idea{
+        flex-direction: column;
+        align-items: center;
+        &_text{
+            max-width: 760px;
+            align-items: center;
+            h1{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+        &_img{
+            position: relative;
+            &_svg{
+                display: none;
+            }
+            &_img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include for-tablet(){
+    .idea{
+        &_text{
+            max-width: 450px;
+            h1{
+                font-size: 36px;
+                line-height: 44px;
+            }
+        }
+    }
+}
+
+@include for-mobile(){
+    .idea{
+        &_text{
+            max-width: 300px;
+            h1{
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+    }
+}
