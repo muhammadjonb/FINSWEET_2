@@ -1017,6 +1017,7 @@ footer {
   display: flex;
   align-items: center;
   max-width: 625px;
+  height: 248px;
 }
 .read_card img {
   height: 100%;
@@ -1253,6 +1254,7 @@ footer {
   .read_card {
     flex-direction: column;
     width: 296px;
+    height: auto;
   }
   .read_text {
     padding: 24px;
@@ -1298,6 +1300,7 @@ footer {
   margin: 0 auto;
 }
 .servis .technikal {
+  padding: 60px 0;
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
@@ -1662,6 +1665,7 @@ footer {
 .career_inner .details-inner {
   padding: 60px 0;
   background: #ECF8F9;
+  height: 750px;
 }
 .career_inner .details-inner .top-det {
   max-width: 100%;
@@ -1693,6 +1697,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.career_inner .details-inner .bottom-det ul {
+  padding-top: 80px;
+}
 .career_inner .details-inner .bottom-det ul li {
   padding-bottom: 14px;
 }
@@ -1704,7 +1711,7 @@ footer {
   line-height: 24px; /* 150% */
 }
 .career_inner .apply {
-  height: 700px;
+  height: 800px;
   padding-left: 15px;
 }
 .career_inner .apply .text1-app {
@@ -2181,6 +2188,43 @@ footer {
 }
 .dark .footer_left .footer_image2 {
   display: block;
+}
+
+.dark .section_three {
+  background-color: #134c61;
+}
+.dark .local_card {
+  transition: 0.3s;
+  background-color: #232536;
+}
+.dark .local_card:hover {
+  box-shadow: 0 0 15px -2px #ECF8F9;
+}
+.dark .section_four {
+  background-color: #674b32;
+}
+.dark .build_card {
+  transition: 0.3s;
+  background-color: #232536;
+}
+.dark .build_card:hover {
+  box-shadow: 0 0 15px -2px #ECF8F9;
+}
+.dark .section_five {
+  background-color: #4a3d5d;
+}
+.dark .customer_card {
+  transition: 0.3s;
+  background-color: #232536;
+}
+.dark .customer_card:hover {
+  box-shadow: 0 0 15px -2px #ECF8F9;
+}
+.dark .section_six {
+  background-color: #134c61;
+}
+.dark .read_card {
+  background-color: #232536;
 }
 
 @media screen and (max-width: 992px) {

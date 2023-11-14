@@ -56,6 +56,64 @@
         }
     }
 }
+.dark{
+    .section_three{
+        background-color: #134c61;
+    }
+    .local{
+        &_card{
+            transition: 0.3s;
+            background-color: $hero-color;
+            &:hover{
+                box-shadow: 0 0 15px -2px #ECF8F9;
+            }
+        }
+    }
+    .section_four{
+        background-color: #674b32;
+    }
+    .build{
+        &_card{
+            transition: 0.3s;
+            background-color: $hero-color;
+            &:hover{
+                box-shadow: 0 0 15px -2px #ECF8F9;
+            }
+        }
+    }
+    .section_five{
+        background-color: #4a3d5d;
+    }
+    .customer{
+        &_card{
+            transition: 0.3s;
+            background-color: $hero-color;
+            &:hover{
+                box-shadow: 0 0 15px -2px #ECF8F9;
+            }
+        }
+    }
+    .section_six{
+        background-color: #134c61;
+    }
+    .read{
+        &_card{
+            background-color: $hero-color;
+        }
+    }
+    // .local *{
+    //     color: $hero-color !important;
+    // }
+    // .build *{
+    //     color: $hero-color !important;
+    // }
+    // .customer *{
+    //     color: $hero-color !important;
+    // }
+    // .read *{
+    //     color: $hero-color !important;
+    // }
+}
 @include for-large-tablet{
     .dark_light{
         left: 0;

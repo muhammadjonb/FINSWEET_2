@@ -443,6 +443,7 @@
         background-color: $white;
         @include flex-items;
         max-width: 625px;
+        height: 248px;
         img{
             height: 100%;
         }
@@ -722,6 +723,7 @@
         &_card{
             flex-direction: column;
             width: 296px;
+            height: auto;
         }
         &_text{
             padding: 24px;
