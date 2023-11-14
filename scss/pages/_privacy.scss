@@ -89,3 +89,27 @@
     }
   }
 }
+
+@include for-large-tablet{
+  .privary{
+    .bg_lightblue{
+      padding: 60px 100px;
+    }
+  }
+}
+
+@include for-tablet{
+  .privary{
+    .bg_lightblue{
+      padding: 60px 50px;
+    }
+  }
+}
+
+@include for-large-mobile{
+  .privary{
+    .bg_lightblue{
+      padding: 60px 20px;
+    }
+  }
+}

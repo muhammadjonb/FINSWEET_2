@@ -2103,6 +2103,21 @@ footer {
   background: #ffa155;
 }
 
+@media screen and (max-width: 992px) {
+  .privary .bg_lightblue {
+    padding: 60px 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .privary .bg_lightblue {
+    padding: 60px 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .privary .bg_lightblue {
+    padding: 60px 20px;
+  }
+}
 .btn {
   position: relative;
   padding: 20px 32px;
