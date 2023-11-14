@@ -1,1 +1,61 @@
 // TEAM PAGE
+
+.team_page{
+    .section_team{
+        padding: 96px 0;
+    }
+    .team{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 505px;
+        img{
+            max-width: 320px;
+            border-radius: 50%;
+        }
+        h1{
+            font-size: 36px;
+            line-height: 54px;
+            color: $hero-color;
+            margin: 48px 0 8px 0;
+            text-align: center;
+        }
+        span{
+            font-size: 14px;
+            line-height: 20px;
+            color: $hero-color;
+            opacity: 0.6;
+        }    
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            color: $hero-color;
+            opacity: .87;
+            margin: 24px 0 32px 0;
+            text-align: center;
+        }
+        &_icon{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            ion-icon{
+                color: $hero-color;
+                transition: 0.2s;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
+
+@include for-large-mobile(){
+    .team_page{
+        .team{
+            img{
+                width: 200px;
+            }
+        }
+    }
+}

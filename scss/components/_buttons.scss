@@ -1,0 +1,31 @@
+.btn{
+    position: relative;
+    padding: 20px 32px;
+    background-color: #444CFC;
+    @include flex-items;
+    color: $white;
+    border: 2px solid transparent;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 87%;
+    gap: 8px;
+    &_lt{
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        z-index: 5;
+    }
+    &_icon{
+        transition: 0.3s;
+        fill: $white;
+    }
+    &:hover{
+        background-color: transparent;
+        border-color: #444CFC;
+        color: #444CFC;
+        opacity: 100%;
+        .btn_icon{
+            fill: #444CFC;
+        }
+    }
+}
